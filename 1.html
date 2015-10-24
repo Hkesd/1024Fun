@@ -1,0 +1,87 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>1024</title>
+<link rel="stylesheet" media="screen" href="css/default.css" />
+<script type="text/javascript" src="js/script_jquery.js"></script>
+<script type="text/javascript" src="js/script_engine.js"></script>
+<script type="text/javascript" src="js/script_share.js"></script>
+</head>
+
+<body>
+<!-- header -->
+<div class="header bg">
+	<div class="inner">
+    	<a href="http://hackgame.blackbap.org/" class="logo"></a>
+        <a href="javascript:void(0);" class="share" title="分享到" id="switch_share"></a>
+        <ul class="share_inner" id="share_box">
+        	<li><a href="javascript:void(0);" class="icon sina_icon" id="share_sina"></a></li>
+            <li><a href="javascript:void(0);" class="icon renren_icon" id="share_renren"></a></li>
+            <li><a href="javascript:void(0);" class="icon tengxun_icon" id="share_qq"></a></li>
+            <li><a href="javascript:void(0);" class="icon douban_icon" id="share_douban"></a></li>
+            <li><a href="javascript:void(0);" class="icon twitter_icon" id="share_twitter"></a></li>
+        </ul>
+        <div class="c"></div>
+    </div>
+</div>
+<!-- header -->
+<!-- main -->
+<div class="main">
+	<div class="inner">        <!-- left box -->
+    	<div class="box commonbox lvl1 radius">
+        	<h5 class="title b_title">
+                <span class="icon blub_icon"></span>
+                <span class="mission mission1"></span>
+                <span id="no_script" class="noscript"></span>
+            </h5>
+            <div class="box_inner">
+                <div class="main_box radius">
+                    <blockquote class="quote">
+                    	<span class="icon quote_s"></span>
+                        <span class="icon quote_e"></span>
+                    	奸商说,无论如何您都是错的                    </blockquote>
+                    <div class="main_form lvl1_form" id="lvl1_form">
+                    	<form method="post" action="" onsubmit="return chk_submit();">
+                        <p><label for="password">输入通关密码 PassWord</label></p>
+                        <p>
+                        	<span class="icon key_icon"></span>
+                        	<input type="password" name="password" id="password" class="txtbox pwdbox radius" required="true" title="请填写通关密码" />
+                            <input type="hidden" name="authkey" id="authkey" required="true" value="3BF5F2AE523D2ADCB17DC1094F70AC56" />
+                            <input type="submit" name="submit" id="submit" class="enter_btn" value="ENTER" />
+                        </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+		function chk_submit() {
+			if ( $( '#password' ).val() == '' ) {
+				notice_me('#password', '密码不能为空');
+			} else {
+				notice_me('#password', '密码不能为非空');
+			}
+			//JS说无论如何您都是错的
+			return false;
+		}
+		</script>
+        <!-- left box -->
+			<!-- sidebar -->
+        <!-- sidebar -->
+        <div class="c"></div>    </div>
+</div>
+<!-- main -->
+<div class="c"></div>
+<!-- footer -->
+<div class="footer bg">
+	<div class="inner">
+    	<p class="description"><p>主办方 电脑报</p><p>设计与程序 Paperen</p><p>但这仅仅是一个游戏</p></p>
+        <div class="sign">2011 HackGame2</div>
+    </div>
+</div>
+<!-- footer -->
+<div class="errortip" id="errortip"></div>
+</body>
+</html>

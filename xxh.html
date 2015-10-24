@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="hb-loaded">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+<title>1024程序员的世界</title>
+<link rel="stylesheet" media="screen" href="css/default.css">
+<link rel="stylesheet" media="screen" href="css/main.css">
+</head>
+
+<body>
+<!-- header -->
+<div class="header bg">
+	<div class="inner">
+    	<a href="index.html" class="logo">传习教育 <span style="font-size:25px;">黑客入侵</span></a>
+        <div class="c"></div>
+    </div>
+</div>
+<!-- header -->
+<!-- main -->
+<div class="main">
+	<div class="inner">        <!-- left box -->
+    	<div class="box commonbox lvl1 radius">
+        	<h5 class="title b_title">
+                <span class="icon blub_icon"></span>
+                <span class="mission mission1"></span>
+                <span id="no_script" class="noscript" style="display: none;"></span>
+				<span>Level 3</span>
+            </h5>
+            <div class="box_inner">
+                <div class="main_box radius">
+                    <blockquote class="quote">
+                    	<span class="icon quote_s"></span>
+                        <span class="icon quote_e"></span>
+                    	奸商说,只有输入正确密码，就给你惊喜                    </blockquote>
+                    <div class="main_form lvl1_form" id="lvl1_form">
+                    	<form method="post" action="ld.php" onsubmit="return chk_submit();">
+                        <p><label for="password">输入通关密码 PassWord</label></p>
+                        <p>
+                        	<span class="icon key_icon"></span>
+                        	<input type="password" name="password" id="password" class="txtbox pwdbox radius" required="true" title="请填写通关密码">
+                            <input type="hidden" name="authkey" id="authkey" required="true" value="FD07DFA5D5133777D432546F02E2E9D6">
+                            <input type="submit" name="submit" id="submit" class="enter_btn" value="ENTER">
+                        </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+		function chk_submit() {
+			if ( $( '#password' ).val() == 'xiongxianhe' ) {
+				return true;
+			} else {
+				notice_me('#password', '密码不能为空');
+			}
+			return false;
+		}
+		</script>
+        <!-- left box -->
+		
+        <div class="c"></div>    </div>
+</div>
+<!-- main -->
+<div class="c"></div>
+<!-- footer -->
+<div class="footer bg">
+	<div class="inner">
+		<p class="description"></p>
+		<div class="sign">Designer: xxh(360765409@qq.com) hkesd(158734462@qq.com) <br> 2015.10.24</div>
+    </div>
+</div>
+<!-- footer -->
+<div class="errortip" id="errortip"></div>
+
+</body></html>
